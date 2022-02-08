@@ -1,0 +1,38 @@
+{% extends "app/layout.html" %}
+
+{% block content %}
+
+<title>Recieve An Estimate From Roland's Landscaping</title>
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'app/content/estimate.css' %}" />
+
+
+<div class="container body-content">
+    <section class="heading">
+        <div class="container">
+            <h1 class="pageheading">Recieve an Estimate From Roland's Landscaping</h1>
+        </div>
+    </section>
+
+    <section class="paragraph">
+        <h2 class="text-center">How It Works</h2>
+        <p id="des-p">
+            At Roland's Landscaping we like to do things differently when it comes to giving quotes to our clients.
+            We like to have an in person meeting with our clients to discuss their needs and present the value we bring to them.
+            Please schedule a time through the google calender on this page and fill out the form. Once you do so we will reach out to you,
+            so that we can confirm our in-person meeting to give you an estimate on your project.
+        </p>
+    </section>
+
+    <section class="calendar">
+        <!--<iframe src="https://koalendar.com/e/meet-with-rolando-arevalo?embed=true" width="100%" height="800px" frameborder="0"></iframe>-->
+        <!-- Calendly inline widget begin -->
+        <div class="calendly-inline-widget" data-url="https://calendly.com/itrolandslandscaping/estiamtemeeting" style="min-width:320px;height:630px;"></div>
+        <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+        <!-- Calendly inline widget end -->
+    </section>
+
+</div>
+
+
+{% endblock %}

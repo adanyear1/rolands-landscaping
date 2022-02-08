@@ -1,0 +1,171 @@
+:root {
+    --banheight: 450px;
+    --pfontsize: 2.0rem;
+    --bkgcol: #6b8f71;
+}
+
+.banner{
+    background-image: url("../../../static/app/images/homebanner.jpg");
+    background-size: 100% 100%;
+    height: var(--banheight);
+    color: ivory;
+}
+
+
+.head-text{
+    height: var(--banheight);
+}
+
+.headingtext {
+    background: rgb(90, 102, 80); /* Fallback color */
+    background: rgba(90, 102, 80, 0.5); /* Black background with 0.5 opacity */
+    padding: 10px;
+}
+
+.services {
+    background-color: var(--bkgcol);
+    padding-bottom: 20px;
+    margin-bottom: 8px;
+    margin-top: 30px;
+}
+
+.services h2{
+    color: white;
+}
+
+.card {
+    background-size: 100% 100%;
+    height: 350px;
+    color: floralwhite;
+    height: 200px;
+    border: none;
+}
+
+#zero {
+    background-image: url("../../../static/app/images/homezero.jpg");
+}
+
+#tree {
+    background-image: url("../../../static/app/images/hometree.jpg");
+}
+
+#masonry {
+    background-image: url("../../../static/app/images/homemason.jpg");
+}
+
+.serviceslink {
+    color: floralwhite;
+    background: rgb(90, 102, 80); /* Fallback color */
+    background: rgba(90, 102, 80, 0.5); /* Black background with 0.5 opacity */
+    padding: 4px;
+}
+
+.serviceslink:active,
+.serviceslink:hover{
+    color: floralwhite;
+    text-decoration: none;
+}
+
+
+.home-connect {
+    max-width: 85%;
+    margin: 50px auto;
+    position: relative;
+    box-shadow: 0 10px 30px 0px rgba(0,0,0,0.1);
+    padding: 30px;
+}
+
+/*Form Editing*/
+.form-control {
+    height: 48px;
+    border: 2px solid #5A6650;
+    box-shadow: none;
+    border-radius: 0px;
+}
+
+.form-control:-moz-placeholder {
+    color: #c76114;
+}
+
+.form-control::-moz-placeholder {
+    color: #c76114;
+}
+
+.form-control:-ms-input-placeholder {
+    color: #c76114;
+}
+
+.form-control::-webkit-input-placeholder {
+    color: #c76114;
+}
+
+.home-gallery{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+    width: 100%;
+}
+
+.gallery {
+    background-color: #fefae0;
+    border-top: 2px solid #0e402d;
+    border-bottom: 2px solid #0e402d;
+}
+
+.homelink a{
+    color: black;
+    text-decoration: none;
+}
+
+.homelink a:hover,
+.homelink a:active{
+    color: var(--bkgcol);
+    text-decoration: none;
+}
+
+#area-col {
+    flex-direction: column;
+}
+
+.about-p,
+.contact-p,
+.city-list{
+    font-size: var(--pfontsize);
+}
+
+@media (max-width: 767px){
+    .banner {
+        height: 350px;
+    }
+    .headingtext{
+        font-size: 2.6rem;
+    }
+    .card{
+        margin-bottom: 8px;
+    }
+    .home-gallery{
+        padding-bottom: 6px;
+    }
+}
+
+@media (min-width: 768px){
+    .home-connect{
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+}
+
+@media (min-width: 2560px){
+    .banner,
+    .services,
+    .gallery{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
+    .gallery {
+        border: 2px solid #0e402d;
+    }
+}

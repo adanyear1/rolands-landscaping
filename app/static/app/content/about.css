@@ -1,0 +1,86 @@
+:root {
+    --banheight: 400px;
+    --storyheight: 300px;
+    --pfontsize: 2.0rem;
+}
+
+#pagebanner {
+    background-image: url("../../../static/app/images/aboutbanner.jpg");
+    background-size: 100% 100%;
+    height: var(--banheight);
+}
+
+#pagebanner .head-text{
+    flex-direction: column;
+    height: var(--banheight);
+    color: ivory;
+}
+
+.pageheading {
+    background: rgb(0, 0, 0); /* Fallback color */
+    background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+    padding: 10px;
+}
+
+section .story{
+    height: var(--banheight);
+}
+
+#storybanner {
+    background-image: url("../../../static/app/images/story.jpg");
+    background-size: 100% 100%;
+    height: var(--storyheight);
+    color: ivory;
+    border-radius: 2px;
+}
+
+.story .head-text {
+    height: var(--storyheight);
+    background: rgb(0, 0, 0); /* Fallback color */
+    background: rgba(0, 0, 0, 0.2); /* Black background with 0.5 opacity */
+    padding: 10px;
+    /*-webkit-text-stroke: 2px #0E402D;*/
+}
+
+.about{
+    margin-bottom: 30px;
+}
+
+.company-story{
+    margin-top: 30px;
+}
+
+.about-p,
+.story-p{
+    font-size: var(--pfontsize);
+}
+
+#services-list {
+    color: #295135;
+    font-size: 2.3rem;
+}
+
+#aboutimg{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+
+#cmimg {
+    width: 100%;
+    height: 75%;
+    margin: auto;
+}
+
+@media (max-width: 767px){
+    #storybanner,
+    .story .head-text {
+        height: 200px;
+    }
+    .pageheading{
+        font-size: 2.2rem;
+    }
+    #aboutimg {
+        padding-bottom: 8px;
+    }
+}

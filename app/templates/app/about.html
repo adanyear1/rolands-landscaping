@@ -1,0 +1,112 @@
+{% extends "app/layout.html" %}
+
+{% block content %}
+
+<title>About Roland's Landscaping</title>
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'app/content/about.css' %}" />
+
+<div class="banner" id="pagebanner">
+    <div class="container">
+        <div class="head-text d-flex align-items-center text-center justify-content-center">
+            <h1 class="pageheading">About Roland&#39;s Landscaping</h1>
+            <h2 class="pageheading">We invite you to learn more about our history, meet our team, and learn about our services</h2>
+        </div>
+    </div>
+</div>
+
+<section class="about">
+    <div class="container body-content">
+        <h2><strong>About Our Business</strong></h2>
+        <p class="about-p">
+            Roland&#39;s Landscaping is a residential landscaping company that provides landscape installation and modification services to homeowners who reside in the North Austin, TX and surrounding cities such as Georgetown, Round Rock, Cedar Park, Leander, North Austin, Jarrell, Hutto, and Pflugerville. Our mission is to provide our clients with landscaping services that transform the exterior of their homes to that of a natural oasis. Our vision is to be the number one provider of landscaping services to clients in the Austin area. We are a business that is fully licensed to operate in the state of Texas, who is also bonded and insured.
+        </p>    
+        <p class="about-p">
+            Roland&#39;s Landscaping provides residential concrete, masonry, tree, and zeroscaping services to clients. Our projects portfolio consists of patios for backyards, flowerbeds for gardens, and adding a zeroscape to residential lots and planting trees that serve as natural fences. We work with residential properties of all sizes and do not leave the property until the landscaping looks better than when we first arrived. We establish relationships with our clients and keep coming back every season to further modify their properties so that their landscapes look modern, elegant and unique.
+        </p>
+    </div>
+</section>
+
+<section class="story">
+    <div class="container body-content">
+        <div class="banner" id="storybanner">
+            <div class="head-text d-flex align-items-center justify-content-center">
+                <h1><strong>Our Story!</strong></h1>
+            </div>
+        </div>
+
+        <div class="company-story">
+            <p class="story-p">
+                After graduating from high school Rolando Arevalo had a vision of starting a successful landscaping company. With only a shovel Rolando started providing landscaping services to clients in Georgetown, TX. In a few short years Rolando went from providing tree planting services to managing a crew of 15 laborers who transform plain backyards into a dreamscape, with flowerbeds, patios, and lush gardens. Roland&#39;s Landscaping is a young company that has established itself as reliable landscaping company in North Austin, TX. We are a family owned and operated business where Rolando, his father and brothers manage day to day operations.
+            </p>
+            <p class="story-p">
+                Roland&#39;s Landscaping has seen its market share grow due to being a reliability and quality driven landscaping company that exceeds client expectations. Due to Rolando&#39;s network of material suppliers, and landscape architects he can provide landscaping services that transform a residential property to a beautiful oasis. Additionally, the landscaping team at Roland&#39;s landscaping has 150 years combined experience in a myriad of construction fields, which is why Roland&#39;s Landscaping can provide anything that clients ask for. By focusing only on landscape installations and modifications, clients are working with a business that understands their needs. Roland&#39;s Landscaping is facing massive growth due to the growth the Austin Metropolitan Area is facing. 
+            </p>
+        </div>
+    </div>
+</section>
+
+<section class="Sevices">
+    <div class="container">
+        <h2><strong>Our Services</strong></h2>
+        <ul class="list-group">
+            <li class="list-group-item">
+                <a href="{% url 'tree' %}" id="services-list">Tree Services</a>
+            </li>
+            <li class="list-group-item">
+                <a href="{% url 'concrete' %}" id="services-list">Masonry &#38; Concrete Services</a>
+            </li>
+            <li class="list-group-item">
+                <a href="{% url 'zeroscaping' %}" id="services-list">Zeroscaping Services</a>
+            </li>
+        </ul>
+        <h2>Zeroscaping</h2>
+        <p class="about-p">
+            Homeowners often look for landscaping solutions that require little maintenance but will allow for lush plants to grow. A good solution is a zeroscape where native plants will grow in gravel and dirt instead of soil. Zeroscaping is also a cost effective solution because the plants typically used require less watering and will grow to be up to three feet tall.
+        </p>
+        <div class="row">
+            <div class="col-md-4">
+
+            </div>
+            <div class="col-md-4">
+
+            </div>
+            <div class="col-md-4">
+
+            </div>
+        </div>
+        <h2>Tree Services</h2>
+        <p class="about-p">
+            Looking to add trees to your property to create a natural barrier, provide shade and freshen the atmosphere &#63; Roland&#39;s Landscaping is the partner you can trust to add trees to your property. At Roland&#39;s Landscaping we have the experience to carefully plant trees in your property, so that your property can fully take advantage of the benefits trees bring to your property. We also have the knowledge of which tree species will grow best in your property and we will help you allocate them in the best way. 
+        </p>
+        <div class="row">
+            <div class="col-md-4">
+                <img src="../../static/app/images/about4.jpg" class="d-block" alt="Tree Services" id="aboutimg">
+            </div>
+            <div class="col-md-4">
+                <img src="../../static/app/images/about5.jpg" class="d-block" alt="Tree Services" id="aboutimg">
+            </div>
+            <div class="col-md-4">
+
+            </div>
+        </div>
+        <h2>Concrete &#38; Masonry Services</h2>
+        <p class="about-p">
+            In addition to trees and plants, landscaping accents are constructed using concrete, brick, and stone material. Concrete is an ideal product for surfaces because concrete resists pressure from the water and the outside soil. It is one of the strongest construction materials available meaning it is durable and will last for years to come.  Masonry products serve an important purpose because they provide aesthetics, are non-combustible and require little maintenance. Uses for masonry products are patios, archways, firepits, and retaining walls. Concrete is essential to landscape elements because it is used in building foundations for patios, foundations for setting posts, and building the structures in your backyard. 
+        </p>
+        <div class="row">
+            <div class="col-md-4">
+                <img src="../../static/app/images/about7.jpg" class="d-block" alt="Concrete and Masonry Services" id="cmimg">
+            </div>
+            <div class="col-md-4">
+                <img src="../../static/app/images/about8.jpg" class="d-block" alt="Concrete and Masonry Services" id="cmimg">
+            </div>
+            <div class="col-md-4">
+                <img src="../../static/app/images/about9.jpg" class="d-block" alt="Concrete and Masonry Services" id="cmimg">
+            </div>
+        </div>
+    </div>
+
+</section>
+
+{% endblock %}

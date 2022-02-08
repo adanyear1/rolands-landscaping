@@ -1,0 +1,228 @@
+body {
+    padding-bottom: 0;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Lato', sans-serif;
+}
+
+/* styles for validation helpers */
+.field-validation-error {
+    color: #b94a48;
+}
+
+.field-validation-valid {
+    display: none;
+}
+
+input.input-validation-error {
+    border: 1px solid #b94a48;
+}
+
+input[type="checkbox"].input-validation-error {
+    border: 0 none;
+}
+
+.validation-summary-errors {
+    color: #b94a48;
+}
+
+.validation-summary-valid {
+    display: none;
+}
+
+:root {
+    --nfbkg: #295135;
+    --nftxt: white;
+    --roprabkg: #5A6650;
+    --nfhotxt: #c76114;
+    --ddbkg: #5A6650;
+    --servban: 400px;
+}
+
+/*navbar styling*/
+.bg{
+    background-color: var(--nfbkg);
+}
+
+nav a{
+    color: var(--nftxt);
+}
+
+.navbar-nav .nav-link {
+    font-size: 2.8rem;
+    font-family: 'Lato', sans-serif;
+}
+
+.nav-item{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.navbar-nav .nav-link:hover,
+.list-group-item a:hover,
+#navbarDropdownMenuLink:focus,
+.list-group-item a:active{
+    color: var(--nfhotxt);
+    text-decoration: none;
+}
+
+.dropdown-menu > li > a {
+    color: var(--nfbkg);
+    font-size: 2.5rem;
+}
+
+.dropdown-menu>li>a:hover{
+    background-color: #5A6650;
+}
+
+/*Navbar Logo Styling*/
+.nav-logo {
+    height: 105px;
+    width: 105px;
+}
+
+/*Navbar Icon*/
+nav button {
+    color: var(--nftxt);
+}
+
+/*Navbar Settings
+.navbar{
+    position: absolute;
+}*/
+
+/*Page Styles*/
+.service-list li,
+p {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*Services Pages*/
+#servicebanner {
+    background-size: 100% 100%;
+    height: var(--servban);
+}
+
+#servicebanner .head-text{
+    color: ivory;
+    height: var(--servban);
+}
+
+.service-description{
+    margin-top: 30px;
+}
+
+.service-list li,
+.service-description p{
+    font-size: 1.8rem;
+}
+
+/*Footer*/
+footer {
+    background-color: var(--nfbkg);
+    color: var(--nftxt);
+}
+
+.footer-logo {
+    display: block;
+    margin: auto;
+    width: 75%;
+    height: 75%;
+}
+
+.head-contact-footer {
+    margin-left: 2em;
+}
+
+.footer-icons{
+    font-size: 5.6rem;
+}
+
+.list-group-item {
+    border: none;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+.list-group-item a {
+    color: var(--nftxt);
+    font-size: 1.8rem;
+}
+
+footer .list-group-item{
+    background-color: var(--nfbkg);
+}
+
+footer .footer-text {
+    font-size: 1.8rem;
+}
+
+.footer-icons{
+    padding-top: 3rem;
+}
+
+.footer-icons a{
+    color: var(--nftxt);
+}
+
+#ropra{
+    background-color: var(--roprabkg);
+}
+
+#ropra a{
+    color: var(--nftxt);
+    text-decoration: none;
+}
+
+@media(max-width: 767px){
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+    .navbar-nav .nav-link {
+        font-size: 2.4rem;
+    }
+    .nav-item {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    footer .footer-text {
+        font-size: 1.5rem;
+    }
+    .footer-logo {
+        width: 100%;
+        height: 50%;
+    }
+    footer .col-md-3{
+        text-align: left;
+    }
+}
+
+@media (max-width: 991px){
+    .navbar-nav > li > .dropdown-menu {
+        background-color: var(--nfbkg);
+    }
+    .dropdown-menu > li > a {
+        background-color: var(--nfbkg);
+        font-size: 16px;
+        color: white;
+    }
+}

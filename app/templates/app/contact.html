@@ -1,0 +1,72 @@
+{% extends "app/layout.html" %}
+
+{% block content %}
+
+<title>Contact Rolands Landscaping</title>
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'app/content/contact.css' %}" />
+
+<div class="container body-content">
+    <section class="contactpage">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6" id="contactcol">
+                    <div class="container">
+                        <h1 class="pageheading">Contact Us!</h1>
+                        <p class="section-p">
+                            We are happy to connect with you & discuss how we can provide you with the Landscaping Services you need. Feel free to contact us about the landscaping services we provide. Fill out the form on this page or call us at (512) 508-3079
+                            and a partner from Roland&#39;s Landscaping will contact you within one business day respond to your requests.
+                        </p>
+                        <h2>Contact Information</h2>
+                        <div class="contact-list">
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <i class="fas fa-user-alt"><span id="textname">Rolando Arevalo</span></i>
+                                </li>                            
+                                <li class="list-group-item">
+                                    <i class="fas fa-mobile-alt"><span id="textphone">(512) 508-3079</span></i>
+                                </li>
+                                <li class="list-group-item">
+                                    <i class="far fa-envelope"><span id="textemail">arevalor100@gmail.com</span></i>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6" id="contactcol2">
+                    <h1 class="text-center">Send Us a Message!</h1>
+                    <form action="" method="POST">
+                    {% csrf_token %}
+                        <div class="container">
+                                <div class="form-group">
+                                    <label for="name"><strong>Name</strong></label>
+                                    <input type="text" class="form-control" id="name" placeholder="First & Last Name" name="name">
+                                </div>
+                                <div class="form-group">
+                                    <label for="email"><strong>Email address</strong></label>
+                                    <input type="email" class="form-control" id="email" placeholder="emailaddress@example.com" name="email">
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone"><strong>Phone Number</strong></label>
+                                    <input type="text" class="form-control" id="phone" placeholder="Phone Number" name="phone">
+                                </div>
+                                <div class="form-group">
+                                    <label for="address"><strong>Project Address</strong></label>
+                                    <input type="text" class="form-control" id="address" placeholder="Project Address" name="address">
+                                </div>
+                        </div>
+                        <div class="form-group col-md-12">
+                            <label for="message"><strong>Message</strong></label>
+                            <textarea class="form-control" id="message" rows="5" name="message"></textarea>
+                        </div>
+                        <div class="col-12">
+                            <button type="submit" class="btn btn-success mb-2">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+{% endblock %}

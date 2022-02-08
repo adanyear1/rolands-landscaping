@@ -1,0 +1,94 @@
+{% extends "app/layout.html" %}
+
+{% block content %}
+
+<title>About Roland's Landscaping</title>
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'app/content/projects.css' %}" />
+
+<div class="banner" id="pagebanner">
+    <div class="container">
+        <div class="head-text d-flex align-items-center text-center justify-content-center">
+            <h1 class="pageheading">Our Projects</h1>
+        </div>
+    </div>
+</div>
+
+<section class="description">
+    <div class="container body-content">
+        <p class="project-p">
+            Roland&#39;s Landscaping is a company that has experience modifying the landscaping of homes to transform the property landscape into a dreamscape where the clients will spend their day&#39;s and evenings relaxing. We also install new landscape additions to our client&#39;s homes, which increase the propertie&#39;s aesthetics and increase the natural benefits of the plants and tress growing on our client&#39;s properties. Our skilled team can transform a backyard that is only dirt into a backyard where grass grows, has a garden with beautiful flowerbeds, and trees can grow. 
+        </p>
+    </div> 
+</section>
+
+<section class="zeroscaping">
+    <div class="container body-content">
+            <h2><strong>Backyard Zeroscaping</strong></h2>
+            <p class="project-p">
+                 When you think of a backyard you typically think of grassy grounds with two or three trees planted. Homeowners have several landscape design styles that they can choose from to modify their backyard. When homeowners want a beautiful backyard with minimal effort to maintain they often plan towards having a zeroscape backyard. By choosing zeroscaping homeowners will have native plants planted, giving their backyard a more natural look.  
+            </p>
+            <h3><strong>Before Zeroscaping</strong></h3>
+            <img src="../../static/app/images/before2.jpg" alt="before zeroscaping" class="project-img"/>
+            <p class="project-p">
+                Our client&#39;s backyard consisted of only dirt and lacked vegetation, besides a few trees there were not any plants or gardens. A backyard like this was not a backyard that one would enjoy due to the backyard ground getting muddy during the rainy season. It was also a dusty backyard, where during windy days the wind would pick up the dirt.
+            </p>
+            <h3><strong>Our Zeroscaping Process</strong></h3>
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="../../static/app/images/during21.jpg" class="d-block w-75" alt="Zeroscaping" id="imglong">
+                </div>
+                <div class="col-md-4">
+                    <img src="../../static/app/images/during22.jpg" class="d-block w-75" alt="Zeroscaping" id="imgshort">
+                </div>
+                <div class="col-md-4">
+                    <img src="../../static/app/images/during23.jpg" class="d-block w-75" alt="Zeroscaping" id="imgshort">
+                </div>
+            </div>
+            <p class="project-p">
+                To complete this project, the Roland&#39;s Landscaping used a variety of different methods that are used in landscaping construction. Additionally, the flowerbeds were made using limestone masonry material. To build the flowerbeds for this property the concrete and masonry experience of the Roland&#39;s Landscaping was used. 
+            </p>
+            <h3><strong>After Zeroscaping Was Completed</strong></h3>
+
+            <img src="../../static/app/images/after2.jpg" alt="zeroscaping completed" class="project-img"/>
+            <p class="project-p">
+                The Roland&#39;s Landscaping team designed a backyard that consisted of gardens that were separated by flowerbeds. Grass was also added, and a stone walkway was a great addition to the backyard where our clients can walk through their backyard without stepping on the grass. There were four trees in the backyard that were not removed, the zeroscape was designed to include these four trees
+            </p>
+            <p class="project-p">
+                To add zeroscaping to your property feel free to contact us via the <a href="{% url 'contact' %}">contact page</a> or set an appointment through our <a href="{% url 'estimate' %}">estimates page</a> and a member of the Roland&#39;s Landscaping team will contact you
+            </p>
+        </div>
+</section>
+
+<section class="flowerbeds">
+    <div class="container body-content">
+            <h2><strong>Flowerbed Installations</strong></h2>
+            <p class="project-p">
+                Properties have spaces that are utilized to grow plants, flowers, shrubs, and trees. To create a barrier for insects and weeds homeowners often decide to build flowerbeds constructed using masonry material. At Roland&#39;s Landscaping we build flowerbeds using brick or limestone masonry material. Our flowerbeds help contain soil, and water. Additionally, our flower beds are gorgeous and will increase the curb appeal of your property. We have built flowerbeds for hundred&#39;s of satisfied clients. Our client in Georgetown, TX hired Roland&#39;s Landscaping to build a flowerbed for their front yard in the summer of 2021. 
+            </p>
+          
+            <h3><strong>Before Flowerbed Installation</strong></h3>
+            <img src="../../static/app/images/before1.jpg" alt="before flowerbed" class="project-img"/>
+            <p class="project-p">
+                Typically, a newly built home does not come with any landscaping additions, which is why homeowners typically hire landscaping companies to build landscaping additions. Our clients wanted a flowerbed that matches their home&#39;s masonry design. 
+            </p>
+            
+            <h3><strong>Our Flowerbed Building Process</strong></h3>
+            <img src="../../static/app/images/during1.jpg" alt="flowerbed building process" class="project-img"/>
+            <p class="project-p">
+                Our team at Roland&#39;s Landscaping built this flowerbed using limestone masonry products. We built this flowerbed using traditional masonry building processes and used concrete as a binder to hold the flowerbed structure.
+            </p>
+            <h3><strong>After Flower Bed Installation</strong></h3>
+            <img src="../../static/app/images/after1.jpg" alt="flowerbed completed" class="project-img"/>
+            <p class="project-p">
+                Our team designed and built a flower that matched our client&#39;s home. This flowerbed helps contain the soil and the water used to irrigate the garden. A flowerbed from Roland&#39;s Landscaping also increased the properties curb appeal. 
+            </p>
+                <p class="project-p">
+                    To add flowerbeds to your property feel free to contact us via the <a href="{% url 'contact' %}">contact page</a> or set an appointment through our <a href="{% url 'estimate' %}">estimates page</a> and a member of the Roland&#39;s Landscaping team will contact you
+                </p>    
+        </div>
+</section>
+
+
+
+{% endblock %}

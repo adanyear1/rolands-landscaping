@@ -1,0 +1,59 @@
+:root {
+    --banner-font: 'Crimson Text', serif;
+}
+
+#pagebanner {
+    /* background-image: url("../../../static/app/images/gallery.jpg");*/
+    background-color: #6b8f71;
+    height: 150px;
+    color: ivory;
+    border-bottom-right-radius: 2px;
+    border-bottom-left-radius: 2px;
+}
+
+.pageheading {
+    margin-top: 5%;
+    text-align: center;
+}
+
+.image-gallery {
+    margin-top: 20px;
+}
+
+    .image-gallery .row {
+        margin-bottom: 15px;
+    }
+
+.gallery-image {
+    max-width: 100%;
+    height: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (max-width: 767px) {
+    .image-gallery .row {
+        margin-bottom: 0px;
+    }
+
+    .gallery-image {
+        margin-top: 8px;
+        max-height: 240px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .gallery-image {
+        height: 240px;
+    }
+}
+
+@media (min-width: 2560px) {
+    #pagebanner {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
+}

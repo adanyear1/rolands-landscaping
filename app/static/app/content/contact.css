@@ -1,0 +1,94 @@
+:root {
+    --contactbkg: #0E402D;
+    --placeholder: red;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: url("../../../static/app/images/contact-body.jpg") no-repeat center center fixed;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+
+.list-group-item {
+    background-color: var(--contactbkg);
+    color: white;
+}
+
+.list-group-item i{
+    font-size: 24px;
+    margin: 4px;
+}
+
+#textname {
+    display: inline-block;
+    vertical-align: central;
+    padding-left: 8px;
+}
+
+#textphone {
+    display: inline-block;
+    vertical-align: central;
+    padding-left: 16px;
+}
+
+#textemail {
+    display: inline-block;
+    vertical-align: central; 
+    padding-left: 4px;
+}
+
+.contactpage {
+    margin-top: 20px;
+    color: white;
+    background-color: var(--contactbkg);
+    border-radius: 4px;
+}
+
+#contactcol {
+   
+}
+
+.section-p {
+    font-size: 1.8rem;
+}
+
+#contactcol2 {
+    color: #f7f7f2;
+}
+
+/*Form Editing*/
+.form-control{
+    height: 48px;
+    border: none;
+    border-radius: 0px;
+}
+
+.form-control:-moz-placeholder {
+    color: #c76114;
+}
+
+.form-control::-moz-placeholder {
+    color: #c76114;
+}
+
+.form-control:-ms-input-placeholder {
+    color: #c76114;
+}
+
+.form-control::-webkit-input-placeholder {
+    color: #c76114;
+}
+
+.col-12 {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+@media (max-width: 991px){
+    .list-group-item i {
+        font-size: 1.7rem;
+    }
+}

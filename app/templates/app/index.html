@@ -1,0 +1,159 @@
+{% extends "app/layout.html" %}
+
+{% block content %}
+
+<title>Rolands Landscaping - Landscaping Services in Austin, TX</title>
+{% load static %}
+<link rel="stylesheet" type="text/css" href="../../static/app/content/index.css" />
+
+<section class="banner">
+    <div class="container">
+        <div class="head-text d-flex align-items-center text-center justify-content-center">
+            <h1 class="headingtext">Beautify Your Property With our Landscape Installation and Modification Services</h1>
+        </div>
+    </div>
+</section>
+
+<section class="home-about">
+    <div class="container">
+        <h2><strong>About Roland&#39;s Landscaping</strong></h2>
+        <p class="about-p">
+            We are a landscaping company serving the North Austin, TX area where we provide our clients with landscape installation and modification 
+            services. We serve residential clients who are looking to improve their properties by adding landscape modifications to increase privacy, 
+            curb appeal and enhance their home spaces. Our portfolio of projects includes patios for backyards, flowerbeds, adding zero scaping to 
+            residential lots and planting trees that serve as fences. Studies show that homeowners who add landscape modifications to their properties 
+            increase their property value by up to 15 percent. 
+        </p>
+        <p class="about-p">
+            Our team has a combined 150 years of experience performing concrete, masonry, tree services, and landscape modification services. 
+            We have the experience and expertise to perform any landscape installation or modification services that your property may need to 
+            improve its aesthetics and landscape use. To provide high-quality services to our clients we have established relationships with 
+            different suppliers for concrete, plants, trees, masonry products and designers to provide you with a beautiful landscape. Roland&#39;s 
+            Landscaping is a business that is fully Licensed, Bonded and Insured to operate in the state of texas 
+        </p>
+        
+    </div>
+</section>
+
+
+<section class="services">
+    <div class="container">
+        <h2 class="text-center justify-content-center"><strong>See What We Offer</strong></h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card" id="zero">
+                  <div class="card-body d-flex align-items-center justify-content-center">
+                        <h3><a href="{% url 'zeroscaping' %}" class="serviceslink">Zeroscaping</a></h3>
+                  </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card" id="tree">
+                    <div class="card-body d-flex align-items-center justify-content-center">
+                        <h3><a href="{% url 'tree' %}" class="serviceslink">Tree Services</a></h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card" id="masonry">
+                    <div class="card-body d-flex align-items-center justify-content-center">
+                        <h3><a href="{% url 'concrete' %}" class="serviceslink">Concrete &#38; Masonry</a></h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</section>
+
+<section class="home-connect">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6" >
+                <h2 class="text-center"><strong>Connect With Us!</strong></h2>
+                <p class="contact-p">
+                    Hello, thank you for visiting the official website for Roland&#39;s Landscaping. Please feel free to fill out the contact form on this page to reach out to us and speak to us about
+                    the landscaping services you need. 
+                </p>
+            </div>
+            <div class="col-md-6">
+                
+                <form action="" method="POST">
+                {% csrf_token %}
+                    <div class="form-group">
+                        <label for="name">First & Last Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="First & Last Name" name="name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email address</label>
+                        <input type="email" class="form-control" id="email" placeholder="emailaddress@example.com" name="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="text" class="form-control" id="phone" placeholder="Phone Number" name="phone">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea class="form-control" id="message" rows="5" name="message"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-success mb-2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="gallery">
+    <div class="container">
+        <h2><strong>See Our Image Gallery!</strong></h2>
+        <div class="row">
+            <div class="col-md-3">
+                <a href="#"><img class="home-gallery" src="../../static/app/images/hgallery1.jpg"/></a>
+            </div>
+            <div class="col-md-3">
+                <a href="#"><img class="home-gallery" src="../../static/app/images/hgallery2.jpg"/></a>
+            </div>
+            <div class="col-md-3">
+                <a href="#"><img class="home-gallery" src="../../static/app/images/hgallery3.jpg"/></a>
+            </div>
+            <div class="col-md-3">
+                <a href="#"><img class="home-gallery" src="../../static/app/images/hgallery4.jpg"/></a>
+            </div>
+        </div>
+        <h4 class="homelink"><strong><a href="{% url 'gallery' %}">Check Out More of Our Work</a></strong></h4>
+    </div>
+
+</section>
+
+<section class="misc-home page-content">
+    <div class="container">
+        <h2 class="maphead"><strong>Areas We Serve</strong></h2>
+        <div class="row">
+            <div class="col-md-6 areamap">
+                <iframe src="https://www.google.com/maps/d/embed?mid=1_fQcipMtEYrqwBxR8BgKUz5KeAyFGWaX&ehbc=2E312F" style="width:100%; height:380px; margin-left: auto; margin-right: auto;"></iframe>
+            </div>
+            <div class="col-md-6 d-flex align-items-center justify-content-center" id="area-col">
+                <p class="city-list">
+                   Roland&#39;s Landscaping provides landscaping services to the North Austin Metropolitan Area. We currently serve the following areas:
+                </p>
+                <p class="city-list">
+                    North Austin, Georgetown, Round Rock, Cedar Park, Leander, North Austin, Jarrell, Hutto, Pflugerville
+                </p>
+                <p class="city-list">
+                    We are not limited to serving these areas. If you have a project outside of these areas please don&#39;t hesitate to contact us via our <a href="{% url 'contact' %}">contact page</a> or give us a call at (512) 508-3079 and we will discuss your needs. 
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="reviews">
+    <!--<div class="container">
+        <h2 class="text-center"><strong>See What Our Customers Are Saying!</strong></h2>
+        <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+        <div class="elfsight-app-6a2558a2-f0a4-43fe-9335-a8d850f45302"></div>
+    </div>-->
+</section>
+
+
+{% endblock %}

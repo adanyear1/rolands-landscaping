@@ -1,0 +1,46 @@
+{% extends "app/layout.html" %}
+
+{% block content %}
+
+<title>About Roland's Landscaping</title>
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'app/content/tree.css' %}" />
+
+<div class="banner" id="servicebanner">
+    <div class="container">
+        <div class="head-text d-flex align-items-center text-center justify-content-center">
+            <h1 class="pageheading">Tree Services</h1>
+        </div>
+    </div>
+</div>
+
+<section class="service-description">
+    <div class="container body-content">
+        <p>
+            Trees are an essential plant for our home gardens. Not only do trees increase the beauty of your outdoor space they also freshen the atmosphere, provide shade, absorb noise, and increase your homes privacy. In the Austin, TX Metropolitan area it is common to see trees like the Texas Ash, Cedar Elm, and Arroyo Sweetwood planted outside of peoples homes.
+        </p>
+        <p>
+            To have a beautiful tree on your property, you need to give your trees trimming services. Having an unattended tree in your property will bring dangers to your home and garden. If falling trees are not removed, they will destroy homes, vehicles, and fences. A research study has shown that well maintained trees can increase property values up to 14%.
+        </p>
+    </div>
+</section>
+
+<section class="service-list">
+    <div class="container body-content">
+        <h2>Our Tree Services</h2>
+        <ul class="list-group">
+            <li class="list-group-item">Tree Planting</li>
+            <li class="list-group-item">Tree Trimming</li>
+        </ul>
+    </div>
+</section>
+
+<section class="service-card">
+    <div class="container body-content">
+
+    </div>
+</section>
+
+
+
+{% endblock %}
